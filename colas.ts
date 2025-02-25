@@ -1,26 +1,26 @@
-// # Use case: Grade registration system for a university.
+//  Use case: Grade registration system for a university.
 
-// # Use of queues: the FIFO principle is used, which is a typical principle of queues.
+//  Use of queues: the FIFO principle is used, which is a typical principle of queues.
 
-// # In this example, this principle is used to store student data in the order in which they are enrolled.
+//  In this example, this principle is used to store student data in the order in which they are enrolled.
 
-// # That is, if Maria is added first, Maria will be attended to in the enrollment verification step, then, in the registration of each student's grades, Maria's data is recorded first and then the others.
+//  That is, if Maria is added first, Maria will be attended to in the enrollment verification step, then, in the registration of each student's grades, Maria's data is recorded first and then the others.
 
 // from collections import deque
 
-// # I import deque to store data efficiently within the University class
-// # I implement 'append()' to add students and 'popleft()' to store them, this makes correct use of the FIFO principle
-// # every time a student is registered within the University class with add_student, append is applied to save it as the last element over the
-// # next student in the queue.
+//  I import deque to store data efficiently within the University class
+//  I implement 'append()' to add students and 'popleft()' to store them, this makes correct use of the FIFO principle
+//  every time a student is registered within the University class with add_student, append is applied to save it as the last element over the
+//  next student in the queue.
 
-// # (def add_student(self, student):)
-// # self.students.append(student) <=== use of 'append()'
+//  (def add_student(self, student):)
+//  self.students.append(student) <=== use of 'append()'
 
-// # when students are served, the 'popleft()' method is used to serve students from first to last in the order in which they were added
-// # using the 'append()' method
+//  when students are served, the 'popleft()' method is used to serve students from first to last in the order in which they were added
+//  using the 'append()' method
 
-// # def add_student(self, student):
-// # self.students.append(student) <=== use of 'popleft()'
+//  def add_student(self, student):
+//  self.students.append(student) <=== use of 'popleft()'
 
 class Student {
     name: string;
